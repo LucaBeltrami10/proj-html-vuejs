@@ -1,1 +1,10 @@
 @use '../../node_modules/bootstrap/scss/bootstrap.scss' as *;
+
+ul {
+    list-style-type: none;
+}
+
+.my_container {
+    width: 960px;
+    background-color: lightcoral;
+}
