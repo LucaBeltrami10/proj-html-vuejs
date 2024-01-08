@@ -1,5 +1,7 @@
 <template>
-    <p class="ms-3">ciao</p>
+    <div>
+        MAIN
+    </div>
 </template>
 
 <script>
