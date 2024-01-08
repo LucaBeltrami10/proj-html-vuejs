@@ -34,6 +34,26 @@ export default {
     },
     data() {
         return {
+            HeaderSliderContent: [
+                {
+                    img: 'slider-bike-9.jpg',
+                    title: 'Professional Cycling Club',
+                    paragraph: 'Learning cycling from the pros.'
+
+                },
+                {
+                    img: 'slider-bike-4.jpg',
+                    title: 'Professional Cycling Club',
+                    paragraph: 'Learning cycling from the pros.'
+
+                },
+                {
+                    img: 'slider-bike-12.jpg',
+                    title: 'Professional Cycling Club',
+                    paragraph: 'Learning cycling from the pros.'
+
+                },
+            ],
 
         }
     },
