@@ -22,7 +22,7 @@
             </div>
         </div>
     </nav>
-    <HeaderCarousel :HeaderSliderContent="SliderContent" />
+    <HeaderCarousel :SliderContent="SliderContent" />
 </template>
 
 <script>
@@ -34,7 +34,7 @@ export default {
     },
     data() {
         return {
-            HeaderSliderContent: [
+            SliderContent: [
                 {
                     img: 'slider-bike-9.jpg',
                     title: 'Professional Cycling Club',

@@ -1,19 +1,13 @@
 <template>
     <div id="carouselExample" class="carousel slide">
         <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="../assets/img/slider-bike-9.jpg" class="d-block" alt="...">
+            <div v-for="slide, index in SliderContent" class="carousel-item" :class="index === 0 ? 'active' : ''">
+                <img :src="`/src/assets/img/${slide.img}`" class="d-block" alt="Professional Cycling Photos">
                 <div class="event-info">
-                    <h1>Professional Cycling Club</h1>
-                    <p>Learn cycling from the pros.</p>
+                    <h1>{{ slide.title }}</h1>
+                    <p>{{ slide.paragraph }}</p>
                     <button class="btn btn-dark">Learn More <i class="fa-solid fa-arrow-right ms-1"></i></button>
                 </div>
-            </div>
-            <div class="carousel-item">
-                <img src="../assets/img/slider-bike-9.jpg" class="d-block" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="../assets/img/slider-bike-9.jpg" class="d-block" alt="...">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -30,8 +24,10 @@
 <script>
 export default {
     props: {
-        SliderContent: Object,
+        SliderContent: Object
     }
+
+
 }
 </script>
 <style lang="scss">
