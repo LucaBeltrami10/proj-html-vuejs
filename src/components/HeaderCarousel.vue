@@ -29,7 +29,9 @@
 
 <script>
 export default {
-
+    props: {
+        SliderContent: Object,
+    }
 }
 </script>
 <style lang="scss">

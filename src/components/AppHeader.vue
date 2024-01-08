@@ -22,7 +22,7 @@
             </div>
         </div>
     </nav>
-    <HeaderCarousel />
+    <HeaderCarousel :HeaderSliderContent="SliderContent" />
 </template>
 
 <script>
