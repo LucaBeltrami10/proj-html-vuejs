@@ -28,4 +28,6 @@ export default {
 </script>
 
 
-<style lang="scss"></style>
+<style lang="scss">
+@use '../src/style/general.scss' as *;
+</style>
