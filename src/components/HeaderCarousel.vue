@@ -74,10 +74,21 @@ export default {
     }
 
     button.carousel-control-prev {
-        height: 550px;
-        position: absolute;
-        left: 0;
+
+        span.carousel-control-prev-icon {
+            display: block;
+            background-color: rgba($color: #000000, $alpha: 1.0);
+        }
+
 
     }
+
+    button.carousel-control-next {
+        span.carousel-control-next-icon {
+            display: block;
+            background-color: rgba($color: #000000, $alpha: 1.0);
+        }
+    }
+
 }
 </style>
