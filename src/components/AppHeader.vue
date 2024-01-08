@@ -22,10 +22,16 @@
             </div>
         </div>
     </nav>
+    <HeaderCarousel />
 </template>
 
 <script>
+import HeaderCarousel from './HeaderCarousel.vue';
+
 export default {
+    components: {
+        HeaderCarousel,
+    },
     data() {
         return {
 
