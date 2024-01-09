@@ -1,8 +1,12 @@
 <template>
-    <section class="my_container d-flex mx-auto">
-        <div v-for="card in  CyclingTrainings " class="trainings-card">
-            <p class="fw-bold">{{ card.name }}</p>
-            <img :src="`/src/assets/img/${card.img}`">
+    <section class="my_container text-center mx-auto">
+        <h1>Our Professional Cycling Trainings</h1>
+        <p>Learn from the mountain bike expert.</p>
+        <div class="container-fluid d-flex">
+            <div v-for="card in  CyclingTrainings " class="trainings-card">
+                <p class="fw-bold">{{ card.name }}</p>
+                <img :src="`/src/assets/img/${card.img}`">
+            </div>
         </div>
     </section>
 </template>
