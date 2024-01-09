@@ -172,6 +172,47 @@ export default {
                     profession: 'Biker',
                 },
             ],
+            subscriptionPlan: [
+                {
+                    plan: 'Basic',
+                    img: 'logo-footer-gobike.png',
+                    price: '1000',
+                    services: [
+                        { included: true, service: 'Phone Mountaineer bike training' },
+                        { included: true, service: 'Remote Excellent bike service' },
+                        { included: true, service: 'Onsite Safe cycling training' },
+                        { included: false, service: 'Saafety helmet on bike' },
+                        { included: false, service: 'Free bikes for children' },
+                    ]
+
+                },
+                {
+                    plan: 'Standard',
+                    img: 'logo-footer-gobike.png',
+                    price: '1000',
+                    services: [
+                        { included: true, service: 'Phone Mountaineer bike training' },
+                        { included: true, service: 'Remote Excellent bike service' },
+                        { included: true, service: 'Onsite Safe cycling training' },
+                        { included: false, service: 'Saafety helmet on bike' },
+                        { included: false, service: 'Free bikes for children' },
+                    ]
+
+                },
+                {
+                    plan: 'Premium',
+                    img: 'logo-footer-gobike.png',
+                    price: '1000',
+                    services: [
+                        { included: true, service: 'Phone Mountaineer bike training' },
+                        { included: true, service: 'Remote Excellent bike service' },
+                        { included: true, service: 'Onsite Safe cycling training' },
+                        { included: true, service: 'Saafety helmet on bike' },
+                        { included: true, service: 'Free bikes for children' },
+                    ]
+
+                },
+            ],
         }
     },
     methods: {
