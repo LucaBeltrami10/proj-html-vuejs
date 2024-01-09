@@ -1,5 +1,5 @@
 <template>
-    <section class="my_container mx-auto text-center">
+    <section class="my_container mx-auto mb-5 text-center">
         <h1>Don't Miss Our Events!</h1>
         <p>Get the amazing cycling experience.</p>
         <div>

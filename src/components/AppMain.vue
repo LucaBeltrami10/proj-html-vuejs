@@ -154,19 +154,19 @@ export default {
                     profession: 'Biker',
                 },
                 {
-                    img: 'biker1.jpg',
+                    img: 'biker4.jpg',
                     name: 'Robert',
                     surname: 'Lee',
                     profession: 'Biker',
                 },
                 {
-                    img: 'biker1.jpg',
+                    img: 'biker3.jpg',
                     name: 'John',
                     surname: 'Doe',
                     profession: 'Biker',
                 },
                 {
-                    img: 'biker1.jpg',
+                    img: 'biker2.jpg',
                     name: 'Emily',
                     surname: 'Brown',
                     profession: 'Biker',
