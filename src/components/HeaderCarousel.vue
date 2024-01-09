@@ -1,5 +1,5 @@
 <template>
-    <div id="carouselExample" class="carousel slide">
+    <div id="carouselExample" class="carousel slide mb-4">
         <div class="carousel-inner">
             <div v-for="slide, index in SliderContent" class="carousel-item" :class="index === 0 ? 'active' : ''">
                 <img :src="`/src/assets/img/${slide.img}`" class="d-block" alt="Professional Cycling Photos">
