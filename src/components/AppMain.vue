@@ -178,7 +178,8 @@ export default {
             subscriptionPlan: [
                 {
                     plan: 'Basic',
-                    img: 'logo-footer-gobike.png',
+                    description: 'Learn to ride a bike from the professionals.',
+                    img: 'favicon-gobike.png',
                     price: '1000',
                     services: [
                         { included: true, service: 'Phone Mountaineer bike training' },
@@ -191,7 +192,8 @@ export default {
                 },
                 {
                     plan: 'Standard',
-                    img: 'logo-footer-gobike.png',
+                    description: 'Learn to ride a bike from the professionals.',
+                    img: 'favicon-gobike.png',
                     price: '1000',
                     services: [
                         { included: true, service: 'Phone Mountaineer bike training' },
@@ -204,7 +206,8 @@ export default {
                 },
                 {
                     plan: 'Premium',
-                    img: 'logo-footer-gobike.png',
+                    description: 'Learn to ride a bike from the professionals.',
+                    img: 'favicon-gobike.png',
                     price: '1000',
                     services: [
                         { included: true, service: 'Phone Mountaineer bike training' },
@@ -216,6 +219,7 @@ export default {
 
                 },
             ],
+
         }
     },
     methods: {
