@@ -1,10 +1,14 @@
 <template>
-    <div>
-    </div>
+    <SectionKnowUs />
 </template>
 
 <script>
+import SectionKnowUs from './SectionKnowUs.vue';
 export default {
+    components: {
+        SectionKnowUs,
+
+    },
     data() {
         return {
 
