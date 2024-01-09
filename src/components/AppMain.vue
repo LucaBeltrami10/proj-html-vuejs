@@ -1,7 +1,7 @@
 <template>
     <SectionKnowUs />
     <SectionCyclingTrainings :CyclingTrainings="CyclingTrainings" />
-    <SectionKnowUs />
+    <SectionKnowUs :EventsInfo="EventsInfo" />
 </template>
 
 <script>
