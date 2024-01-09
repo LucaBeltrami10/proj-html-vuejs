@@ -1,12 +1,15 @@
 <template>
     <SectionKnowUs />
+    <SectionCyclingTrainings />
 </template>
 
 <script>
 import SectionKnowUs from './SectionKnowUs.vue';
+import SectionCyclingTrainings from './SectionCyclingTrainings.vue'
 export default {
     components: {
         SectionKnowUs,
+        SectionCyclingTrainings,
 
     },
     data() {
