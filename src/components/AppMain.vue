@@ -3,13 +3,15 @@
     <SectionCyclingTrainings :CyclingTrainings="CyclingTrainings" />
     <SectionOurEvents :EventsInfo="EventsInfo" />
     <SectionOurTrainers :OurTrainers="OurTrainers" />
+    <SectionMembershipPlans :subscriptionPlan="subscriptionPlan" />
 </template>
 
 <script>
-import SectionKnowUs from './SectionKnowUs.vue';
-import SectionCyclingTrainings from './SectionCyclingTrainings.vue';
-import SectionOurEvents from './SectionOurEvents.vue';
-import SectionOurTrainers from './SectionOurTrainers.vue';
+import SectionKnowUs from './SectionKnowUs.vue'
+import SectionCyclingTrainings from './SectionCyclingTrainings.vue'
+import SectionOurEvents from './SectionOurEvents.vue'
+import SectionOurTrainers from './SectionOurTrainers.vue'
+import SectionMembershipPlans from './SectionMembershipPlans.vue'
 
 export default {
     components: {
@@ -17,6 +19,7 @@ export default {
         SectionCyclingTrainings,
         SectionOurEvents,
         SectionOurTrainers,
+        SectionMembershipPlans,
 
     },
     data() {
