@@ -1,5 +1,5 @@
 <template>
-    <section class="my_container mx-auto">
+    <section class="my_container mx-auto overflow-hidden">
         <div class="row">
             <div class="my_left-col col-6 ms-auto">
                 <img src="../assets/img/bike-player.png" alt="Bike player image">
@@ -44,7 +44,6 @@ export default {
 @use '../src/style/general.scss' as *;
 
 section.my_container {
-    height: 530px;
 
     div.row {
         div.my_left-col {
