@@ -1,7 +1,7 @@
 <template>
     <section class="my_container text-center mx-auto">
-        <h1>Our Professional Cycling Trainings</h1>
-        <p>Learn from the mountain bike expert.</p>
+        <h1 class="fs-4 fw-bold">Our Professional Cycling Trainings</h1>
+        <p class="mb-5">Learn from the mountain bike expert.</p>
         <div class="container-fluid d-flex">
             <div v-for="card in  CyclingTrainings " class="trainings-card">
                 <p class="fw-bold">{{ card.name }}</p>
@@ -19,21 +19,27 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-div.trainings-card {
-    width: 180px;
-    border: 4px solid black;
-    position: relative;
-
+section {
     p {
-        position: absolute;
-        top: 20px;
-        left: 20px;
-        color: white;
-
+        font-size: 0.8rem;
     }
 
-    img {
-        width: 100%;
+    div.trainings-card {
+        width: 180px;
+        border: 4px solid black;
+        position: relative;
+
+        p {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: white;
+
+        }
+
+        img {
+            width: 100%;
+        }
     }
 }
 </style>

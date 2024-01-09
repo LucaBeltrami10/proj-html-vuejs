@@ -1,5 +1,5 @@
 <template>
-    <section class="my_container mx-auto overflow-hidden">
+    <section class="my_container mx-auto mb-5 overflow-hidden">
         <div class="row">
             <div class="my_left-col col-6 ms-auto px-3">
                 <img src="../assets/img/bike-player.png" alt="Bike player image">
