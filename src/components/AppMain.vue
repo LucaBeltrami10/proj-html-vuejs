@@ -219,7 +219,32 @@ export default {
 
                 },
             ],
-
+            newArticles: [
+                {
+                    data: '22.06.2022',
+                    subject: 'Bike',
+                    title: 'Road bike or mountain bike?',
+                    content: 'Compared to simila road bikes with a solid frame structure, ',
+                },
+                {
+                    data: '22.06.2022',
+                    subject: 'Bike',
+                    title: 'Road bike or mountain bike?',
+                    content: 'Compared to simila road bikes with a solid frame structure, ',
+                },
+                {
+                    data: '22.06.2022',
+                    subject: 'Bike',
+                    title: 'Road bike or mountain bike?',
+                    content: 'Compared to simila road bikes with a solid frame structure, ',
+                },
+                {
+                    data: '22.06.2022',
+                    subject: 'Bike',
+                    title: 'Road bike or mountain bike?',
+                    content: 'Compared to simila road bikes with a solid frame structure, ',
+                },
+            ]
         }
     },
     methods: {
