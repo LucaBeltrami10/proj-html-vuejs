@@ -6,18 +6,18 @@
             <div class="d-flex justify-content-between">
                 <p>Events</p>
                 <div class="d-flex">
-                    <button>quadratino</button>
-                    <button>burghermenu</button>
+                    <button type="button" class="btn btn-light"><i class="fa-solid fa-square"></i></button>
+                    <button type="button" class="btn btn-light"><i class="fa-solid fa-bars"></i></button>
                 </div>
             </div>
             <div class="card-container d-flex flex-wrap">
-                <div v-for="card in EventsInfo" class="card">
+                <div v-for="card in EventsInfo" class="my-card card">
                     <img :src="`/src/assets/img/${card.img}`" class="card-img-top" alt="...">
                     <div class="card-body text-start pb-0">
                         <h1 class="fw-bold fs-6">Toronto Cycling Event 2023</h1>
-                        <div class="event-data-info d-flex align-items-center">
+                        <div class="event-data-info d-flex">
                             <i class="fa-regular fa-clock me-1"></i>
-                            <p class="m-0">{{ card.startDate }} @ {{ card.startHours }} - {{ card.endDate }} @ {{
+                            <p class="m-0 mb-2">{{ card.startDate }} @ {{ card.startHours }} - {{ card.endDate }} @ {{
                                 card.endHours }}</p>
                         </div>
                         <div class="d-flex">
@@ -43,13 +43,16 @@ export default {
 }
 </script>
 <style lang="scss">
-div.card-container {
-    width: calc((100% / 3) - 2rem);
-    margin: 1rem 1rem 1rem 1rem;
+div.my-card {
+    width: calc((100% / 3) - 1.2rem);
+    margin: 0.6rem 0.6rem 0.6rem 0.6rem;
 
     p {
         font-size: 0.7rem;
     }
 
+    i {
+        font-size: 0.7rem;
+    }
 }
 </style>

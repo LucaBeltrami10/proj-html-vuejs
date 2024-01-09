@@ -141,7 +141,33 @@ export default {
                     place: 'Toronto',
                 }
 
-            ]
+            ],
+            OurTrainers: [
+                {
+                    img: 'biker1.jpg',
+                    name: 'Michael',
+                    surname: 'Lee',
+                    profession: 'Biker',
+                },
+                {
+                    img: 'biker1.jpg',
+                    name: 'Robert',
+                    surname: 'Lee',
+                    profession: 'Biker',
+                },
+                {
+                    img: 'biker1.jpg',
+                    name: 'John',
+                    surname: 'Doe',
+                    profession: 'Biker',
+                },
+                {
+                    img: 'biker1.jpg',
+                    name: 'Emily',
+                    surname: 'Brown',
+                    profession: 'Biker',
+                },
+            ],
         }
     },
     methods: {
