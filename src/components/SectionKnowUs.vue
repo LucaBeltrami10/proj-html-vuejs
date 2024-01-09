@@ -1,19 +1,10 @@
 <template>
-    <div>
+    <div class="my_container container-fluid">
     </div>
 </template>
-
 <script>
 export default {
-    data() {
-        return {
 
-        }
-    },
-    methods: {
-
-    },
 }
 </script>
-
 <style lang="scss" scoped></style>
