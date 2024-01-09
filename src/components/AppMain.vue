@@ -2,17 +2,21 @@
     <SectionKnowUs />
     <SectionCyclingTrainings :CyclingTrainings="CyclingTrainings" />
     <SectionOurEvents :EventsInfo="EventsInfo" />
+    <SectionOurTrainers :OurTrainers="OurTrainers" />
 </template>
 
 <script>
 import SectionKnowUs from './SectionKnowUs.vue';
 import SectionCyclingTrainings from './SectionCyclingTrainings.vue';
 import SectionOurEvents from './SectionOurEvents.vue';
+import SectionOurTrainers from './SectionOurTrainers.vue';
+
 export default {
     components: {
         SectionKnowUs,
         SectionCyclingTrainings,
         SectionOurEvents,
+        SectionOurTrainers,
 
     },
     data() {
