@@ -1,5 +1,5 @@
 <template>
-    <section class="my_container text-center mx-auto">
+    <section class="my_container text-center mx-auto mb-5">
         <h1 class="fs-4 fw-bold">Our Professional Cycling Trainings</h1>
         <p class="mb-5">Learn from the mountain bike expert.</p>
         <div class="container-fluid d-flex">
