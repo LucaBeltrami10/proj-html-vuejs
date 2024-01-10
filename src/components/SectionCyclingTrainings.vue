@@ -41,9 +41,10 @@ section.my_container {
 
         p {
             position: absolute;
-            top: 20px;
+            top: 15px;
             left: 20px;
             color: white;
+            z-index: 4;
 
         }
 

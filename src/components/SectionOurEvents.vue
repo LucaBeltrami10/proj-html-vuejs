@@ -16,7 +16,7 @@
                 <div v-for="card in EventsInfo" class="my-card card">
                     <img :src="`/src/assets/img/${card.img}`" class="card-img-top" alt="...">
                     <div class="card-body text-start pb-0">
-                        <h1 class="fw-bold fs-6">Toronto Cycling Event 2023</h1>
+                        <h1 class="fw-bold fs-6">{{ card.title }}</h1>
                         <div class="event-data-info d-flex">
                             <i class="fa-regular fa-clock me-1"></i>
                             <p class="m-0 mb-2">{{ card.startDate }} @ {{ card.startHours }} - {{ card.endDate }} @ {{
@@ -27,7 +27,7 @@
                             <p>{{ card.place }}</p>
                         </div>
                         <div class="my_tag">
-                            <p class="mb-1">{{ card.tag }}</p>
+                            <p class="m-0">{{ card.tag }}</p>
                         </div>
                     </div>
                 </div>
@@ -62,6 +62,18 @@ section.my_container {
 
         &:hover {
             box-shadow: rgba(63, 63, 63, 0.2) 0px 8px 24px;
+        }
+
+        div.my_tag {
+            background-color: rgb(232, 232, 232);
+            display: inline-block;
+            padding: 0.1rem 0.15rem;
+            border-radius: 3px;
+            margin-bottom: 0.5rem;
+
+            p {
+                font-size: 0.6rem;
+            }
         }
     }
 }
