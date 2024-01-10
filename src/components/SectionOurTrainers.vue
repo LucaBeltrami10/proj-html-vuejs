@@ -16,9 +16,9 @@
                         <p class="fw-bold mb-1">{{ card.name }} {{ card.surname }}</p>
 
                         <p class="fw-bold profession-tag">{{ card.profession }}</p>
-                        <div class="d-flex">
+                        <div class="d-flex social-icons justify-content-center">
                             <i class="fa-brands fa-facebook-f"></i>
-                            <i class="fa-brands fa-square-instagram"></i>
+                            <i class="fa-brands fa-square-instagram mx-2"></i>
                             <i class="fa-brands fa-twitter"></i>
                         </div>
                     </div>
@@ -63,6 +63,14 @@ div.my_card {
     div.card-body {
         color: white;
         background-color: black;
+
+        div.social-icons {
+
+            i {
+                color: white;
+                font-size: 0.7rem;
+            }
+        }
     }
 
     img {
