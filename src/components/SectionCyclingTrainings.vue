@@ -5,7 +5,7 @@
             <p>Learn from the mountain bike expert.</p>
         </div>
         <div class="d-flex w-100">
-            <div v-for="card in  CyclingTrainings " class="trainings-card">
+            <div v-for="card, index in  CyclingTrainings " class="trainings-card" v-show="cardToShow.includes(index)">
                 <p class="fw-bold">{{ card.name }}</p>
                 <img :src="`/src/assets/img/${card.img}`">
                 <button type="button" class="btn btn-dark">View</button>
@@ -23,6 +23,17 @@
 export default {
     props: {
         CyclingTrainings: Object,
+    },
+    data() {
+        return {
+            cardToShow: [0, 1, 2, 3]
+        }
+    },
+    methods: {
+        showNextCard(cardToShow) {
+
+        }
+
     }
 
 }
