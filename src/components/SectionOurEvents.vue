@@ -1,5 +1,5 @@
 <template>
-    <section class="my_container mx-auto mb-5 text-center">
+    <section class="my_container mx-auto text-center">
         <div class="my_titles-sections">
             <h1>Don't Miss Our Events!</h1>
             <p>Get the amazing cycling experience.</p>
@@ -45,20 +45,24 @@ export default {
 }
 </script>
 <style lang="scss">
-div.my-card {
-    width: calc((100% / 3) - 1.2rem);
-    margin: 0.6rem 0.6rem 0.6rem 0.6rem;
+section.my_container {
+    margin-bottom: 5.5rem;
 
-    p {
-        font-size: 0.7rem;
-    }
+    div.my-card {
+        width: calc((100% / 3) - 1.2rem);
+        margin: 0.6rem 0.6rem 0.6rem 0.6rem;
 
-    i {
-        font-size: 0.7rem;
-    }
+        p {
+            font-size: 0.7rem;
+        }
 
-    &:hover {
-        box-shadow: rgba(63, 63, 63, 0.2) 0px 8px 24px;
+        i {
+            font-size: 0.7rem;
+        }
+
+        &:hover {
+            box-shadow: rgba(63, 63, 63, 0.2) 0px 8px 24px;
+        }
     }
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-    <section class="my_container mx-auto mb-5">
+    <section class="my_container mx-auto">
         <div class="my_titles-sections">
             <h1>Recent New & Articles</h1>
             <p>important informatios about bike</p>
@@ -26,6 +26,8 @@ export default {
 </script>
 <style lang="scss" scoped>
 section.my_container {
+    margin-bottom: 5.5rem;
+
     div.card_container {
         div.my_card {
             width: calc((100% / 4) - 2.4rem);
@@ -51,6 +53,7 @@ section.my_container {
                 border-radius: 3px;
                 font-size: 0.7rem;
                 font-weight: bold;
+                background-color: black;
             }
         }
     }

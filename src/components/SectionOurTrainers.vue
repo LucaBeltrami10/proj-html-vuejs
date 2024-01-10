@@ -1,5 +1,5 @@
 <template>
-    <section class="my_container mx-auto mb-5">
+    <section class="my_container mx-auto">
         <div class="my_titles-sections">
             <h1>Our Expert Trainers</h1>
             <p>Learn to ride a bike from the expert</p>
@@ -41,47 +41,51 @@ export default {
 <style lang="scss" scoped>
 @use '../style/partials/variables' as *;
 
-div.my_card {
-    width: calc((100% / 4) - 2.4rem);
-    margin: 0 1.2rem;
-    position: relative;
+section.my_container {
+    margin-bottom: 6rem;
 
-    p {
-        font-size: 0.9rem;
-    }
+    div.my_card {
+        width: calc((100% / 4) - 2.4rem);
+        margin: 0 1.2rem;
+        position: relative;
 
-    p.profession-tag {
-        font-size: 0.7rem;
-        color: $color-profession-tag;
-    }
+        p {
+            font-size: 0.9rem;
+        }
 
-    div.img_container {
-        height: 160px;
-        overflow: hidden;
-    }
+        p.profession-tag {
+            font-size: 0.7rem;
+            color: $color-profession-tag;
+        }
 
-    div.card-body {
-        color: white;
-        background-color: black;
+        div.img_container {
+            height: 160px;
+            overflow: hidden;
+        }
 
-        div.social-icons {
+        div.card-body {
+            color: white;
+            background-color: black;
 
-            i {
-                color: white;
-                font-size: 0.7rem;
+            div.social-icons {
+
+                i {
+                    color: white;
+                    font-size: 0.7rem;
+                }
             }
         }
-    }
 
-    img {
-        object-fit: cover;
-        object-position: center;
-    }
-
-    &:hover {
         img {
-            filter: brightness(0.7);
-            transform: scale(1.1);
+            object-fit: cover;
+            object-position: center;
+        }
+
+        &:hover {
+            img {
+                filter: brightness(0.7);
+                transform: scale(1.1);
+            }
         }
     }
 }
