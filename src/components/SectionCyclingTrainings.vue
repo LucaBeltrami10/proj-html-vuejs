@@ -16,8 +16,6 @@
             <button type="button" class="btn btn-light ms-2"><i class="fa-solid fa-chevron-right"></i></button>
         </div>
     </section>
-
-    <!-- prova -->
 </template>
 <script>
 export default {
