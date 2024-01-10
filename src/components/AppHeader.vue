@@ -5,12 +5,7 @@
                 <img id="gobike-logo" src="../assets/img/logo-gobike.png" alt="go bike logo">
             </div>
             <ul class="col-6 d-flex justify-content-center align-items-center mb-0">
-                <li class="me-4 fw-semibold"><a href="">Home</a></li>
-                <li class="me-4 fw-semibold"><a href="">About Us</a></li>
-                <li class="me-4 fw-semibold"><a href="">Trainings</a></li>
-                <li class="me-4 fw-semibold"><a href="">Packages</a></li>
-                <li class="me-4 fw-semibold"><a href="">Blog</a></li>
-                <li class="me-4 fw-semibold"><a href="">Contact</a></li>
+                <li v-for="opt in headerNavEl" class="me-4 fw-semibold"><a href="">{{ opt.element }}</a></li>
             </ul>
             <div class="col-3 d-flex align-items-center">
                 <i class="fa-solid fa-bars me-2 fs-4"></i>
@@ -29,6 +24,9 @@
 import HeaderCarousel from './HeaderCarousel.vue';
 
 export default {
+    props: {
+        headerNavEl: Array,
+    },
     components: {
         HeaderCarousel,
     },

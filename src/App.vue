@@ -23,7 +23,7 @@ export default {
           options: false
         },
         {
-          element: 'About',
+          element: 'About Us',
           options: false
         },
         {
@@ -32,6 +32,10 @@ export default {
         },
         {
           element: 'Packages',
+          options: false
+        },
+        {
+          element: 'Blog',
           options: false
         },
         {
