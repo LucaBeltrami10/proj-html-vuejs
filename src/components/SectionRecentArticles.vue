@@ -5,11 +5,11 @@
             <p>important informatios about bike</p>
         </div>
         <div class="card_container d-flex">
-            <div class="my_card text-center">
-                <img src="../assets/img/news-bike3-300x180.jpg" alt="">
-                <p class="fw-bold data_news">22.06.2022 - bike</p>
-                <h1 class="fw-bold fs-6">Road bike or mountain bike?</h1>
-                <p>Compared to simila road bikes with a solid frame structure, [...]</p>
+            <div v-for="article in newArticles" class="my_card text-center">
+                <img :src="`/src/assets/img/${article.img}`" :alt="`${article.subject} photo's `">
+                <p class="fw-bold data_news">{{ article.data }} - {{ article.subject }}</p>
+                <h1 class="fw-bold fs-6">{{ article.title }}</h1>
+                <p>{{ article.preview }}]</p>
                 <button type="button" class="btn btn-dark">More</button>
             </div>
         </div>
@@ -18,6 +18,9 @@
 </template>
 <script>
 export default {
+    props: {
+        newArticles: Array
+    }
 
 }
 </script>
