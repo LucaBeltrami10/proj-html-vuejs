@@ -1,7 +1,9 @@
 <template>
     <section class="my_container mx-auto mb-5 text-center">
-        <h1>Don't Miss Our Events!</h1>
-        <p>Get the amazing cycling experience.</p>
+        <div class="my_titles-sections">
+            <h1>Don't Miss Our Events!</h1>
+            <p>Get the amazing cycling experience.</p>
+        </div>
         <div>
             <div class="d-flex justify-content-between">
                 <p>Events</p>

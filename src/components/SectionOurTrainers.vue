@@ -1,7 +1,7 @@
 <template>
     <section class="my_container mx-auto mb-5">
-        <div class="w-100 text-center">
-            <h1 class="fw-bold fs-5">Our Expert Trainers</h1>
+        <div class="my_titles-sections">
+            <h1>Our Expert Trainers</h1>
             <p>Learn to ride a bike from the expert</p>
         </div>
         <div class="w-100 d-flex">

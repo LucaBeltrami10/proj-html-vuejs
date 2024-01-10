@@ -1,7 +1,7 @@
 <template>
     <section class="my_container mx-auto mb-5">
-        <div class="text-center">
-            <h1 class="fw-bold fs-5">Special Packs</h1>
+        <div class="my_titles-sections">
+            <h1>Special Packs</h1>
             <p>Select pricing plan to get more</p>
         </div>
         <div class="d-flex">

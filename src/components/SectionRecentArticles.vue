@@ -1,6 +1,6 @@
 <template>
     <section class="my_container mx-auto mb-5">
-        <div class="text-center">
+        <div class="my_titles-sections">
             <h1>Recent New & Articles</h1>
             <p>important informatios about bike</p>
         </div>

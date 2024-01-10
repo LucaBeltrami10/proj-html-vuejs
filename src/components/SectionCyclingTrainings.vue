@@ -1,7 +1,9 @@
 <template>
     <section class="my_container text-center mx-auto mb-5">
-        <h1 class="fs-4 fw-bold">Our Professional Cycling Trainings</h1>
-        <p class="mb-5">Learn from the mountain bike expert.</p>
+        <div class="my_titles-sections">
+            <h1>Our Professional Cycling Trainings</h1>
+            <p>Learn from the mountain bike expert.</p>
+        </div>
         <div class="container-fluid d-flex">
             <div v-for="card in  CyclingTrainings " class="trainings-card">
                 <p class="fw-bold">{{ card.name }}</p>
@@ -20,9 +22,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 section {
-    p {
-        font-size: 0.8rem;
-    }
+
 
     div.trainings-card {
         width: 180px;

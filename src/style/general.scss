@@ -12,3 +12,17 @@ a {
 .my_container {
     width: 960px;
 }
+
+div.my_titles-sections {
+    text-align: center;
+
+    h1 {
+        font-weight: bold;
+        font-size: 1.3rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+        margin-bottom: 2.2rem;
+    }
+}
