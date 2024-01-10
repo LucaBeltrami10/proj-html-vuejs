@@ -5,12 +5,15 @@
                 <img id="gobike-logo" src="../assets/img/logo-gobike.png" alt="go bike logo">
             </div>
             <ul class="col-6 d-flex justify-content-center align-items-center mb-0">
-                <li v-for="opt in headerNavEl" class="me-4 fw-semibold">
-                    <a href="">{{ opt.element }}</a>
+                <li v-for="elm in headerNavEl" class="me-4 fw-semibold">
+                    <a href="">{{ elm.element }}</a>
                     <div class="custom_border-bottom"></div>
-                    <div class="my_dropdown" :class="opt.options != false ? 'my_dropdown-to-show' : ''">
+                    <div class="my_dropdown" :class="elm.options != false ? 'my_dropdown-to-show' : ''">
                         <ul class="p-0">
-                            {{ dropDown(opt.options) }}
+                            <!-- {{ dropDown(elm.options) }} -->
+                            <li v-for="opt in elm.options" class="ms-4">
+                                <a href="">{{ opt }}</a>
+                            </li>
                         </ul>
                     </div>
                 </li>
@@ -64,7 +67,7 @@ export default {
         }
     },
     methods: {
-        dropDown(ciao) {
+        /* dropDown(ciao) {
             if (ciao === false) {
                 return
             } else {
@@ -76,7 +79,7 @@ export default {
                 return stringToPaste
             }
 
-        },
+        }, */
 
     },
 
@@ -98,13 +101,15 @@ ul {
             margin-top: 0.1rem;
         }
 
-        div.my_dropdown {
+        div.my_dropdown.my_dropdown-to-show {
             background-color: white;
-            width: 5.5rem;
+            width: 10rem;
             padding: 1rem 0;
-            display: none;
+            visibility: hidden;
             position: absolute;
             z-index: 2;
+            border-radius: 3px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         }
 
         &:hover div.custom_border-bottom {
@@ -114,8 +119,8 @@ ul {
         }
 
         &:hover div.my_dropdown-to-show {
-            display: block;
-            transition: display 1s;
+            visibility: visible;
+            transition: visibility 0s, opacity 0.5s linear;
         }
     }
 }
