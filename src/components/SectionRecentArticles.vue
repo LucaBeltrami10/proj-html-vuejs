@@ -1,7 +1,7 @@
 <template>
-    <div>
+    <section class="my_container mx-auto mb-5">
 
-    </div>
+    </section>
 </template>
 <script>
 export default {

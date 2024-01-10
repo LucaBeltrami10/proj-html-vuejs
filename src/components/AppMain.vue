@@ -4,6 +4,7 @@
     <SectionOurEvents :EventsInfo="EventsInfo" />
     <SectionOurTrainers :OurTrainers="OurTrainers" />
     <SectionMembershipPlans :subscriptionPlan="subscriptionPlan" />
+    <SectionRecentArticles :newArticles="newArticles" />
 </template>
 
 <script>
@@ -12,6 +13,7 @@ import SectionCyclingTrainings from './SectionCyclingTrainings.vue'
 import SectionOurEvents from './SectionOurEvents.vue'
 import SectionOurTrainers from './SectionOurTrainers.vue'
 import SectionMembershipPlans from './SectionMembershipPlans.vue'
+import SectionRecentArticles from './SectionRecentArticles.vue'
 
 export default {
     components: {
@@ -20,6 +22,7 @@ export default {
         SectionOurEvents,
         SectionOurTrainers,
         SectionMembershipPlans,
+        SectionRecentArticles,
 
     },
     data() {
