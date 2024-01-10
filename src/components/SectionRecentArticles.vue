@@ -28,9 +28,9 @@ export default {
 section.my_container {
     div.card_container {
         div.my_card {
-            width: calc((100% / 4) - 2rem);
-            margin: 0 2rem;
-            padding: 0.8rem;
+            width: calc((100% / 4) - 2.4rem);
+            margin: 0 1.2rem;
+            padding: 1rem;
             border-radius: 5px;
             box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
