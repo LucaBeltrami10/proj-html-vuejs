@@ -5,7 +5,7 @@
             <p>Get the amazing cycling experience.</p>
         </div>
         <div>
-            <div class="d-flex justify-content-between">
+            <div class="d-flex justify-content-between mx-2">
                 <p>Events</p>
                 <div class="d-flex">
                     <button type="button" class="btn btn-light"><i class="fa-solid fa-square"></i></button>
