@@ -17,14 +17,14 @@
                     with our amazing space.</p>
                 <img class="mt-2 mb-4" src="../assets/img/divider.jpg" alt="Divider image">
                 <div class="d-flex">
-                    <i class="fa-solid fa-helmet-un fs-1 me-2"></i>
+                    <img class="my_img-icon" src="../assets/img/helmet-white-icon.png" alt="helmet icon">
                     <div>
                         <h2 class="fs-6 fw-bold">Professional Team</h2>
                         <p>We make you professional by adding you sincerity as well as professionalism</p>
                     </div>
                 </div>
                 <div class="d-flex ">
-                    <i class="fa-solid fa-helmet-un fs-1 me-2"></i>
+                    <img class="my_img-icon" src="../assets/img/work-white-icon.png" alt="work icon">
                     <div>
                         <h2 class="fs-6 fw-bold">Professional Trainings</h2>
                         <p>We always ride with the best equipment, respecting nature and fun </p>
@@ -87,6 +87,11 @@ section.my_container {
 
             img {
                 width: 80px;
+            }
+
+            img.my_img-icon {
+                height: 55px;
+                margin-right: 0.5rem;
             }
 
             button {
