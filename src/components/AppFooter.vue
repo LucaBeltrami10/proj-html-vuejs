@@ -29,12 +29,18 @@
                 </div>
             </div>
             <div class="my_right-col col-4 d-flex">
-                <ul>
-                    <li>prova</li>
-                </ul>
-                <ul>
-                    <li>prova</li>
-                </ul>
+                <div v-for="list in footerListEl" class=" me-5">
+                    <h1 class="fw-bold fs-6 mb-4">
+                        {{ list.listName }}
+                    </h1>
+                    <ul class="p-0">
+                        <li v-for="li in list.options" class="d-flex mb-2">
+                            <p class="fw-bold m-0 me-1">-</p>
+                            <p class="m-0">{{ li }}</p>
+                        </li>
+                    </ul>
+                </div>
+
             </div>
         </div>
         <div class="row">
