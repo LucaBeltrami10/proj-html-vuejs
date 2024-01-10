@@ -196,7 +196,7 @@ export default {
                     plan: 'Standard',
                     description: 'Learn to ride a bike from the professionals.',
                     img: 'favicon-gobike.png',
-                    price: '1000',
+                    price: '2500',
                     services: [
                         { included: true, service: 'Phone Mountaineer bike training' },
                         { included: true, service: 'Remote Excellent bike service' },
@@ -210,7 +210,7 @@ export default {
                     plan: 'Premium',
                     description: 'Learn to ride a bike from the professionals.',
                     img: 'favicon-gobike.png',
-                    price: '1000',
+                    price: '5000',
                     services: [
                         { included: true, service: 'Phone Mountaineer bike training' },
                         { included: true, service: 'Remote Excellent bike service' },
