@@ -1,6 +1,9 @@
 <template>
     <section class="my_container mx-auto mb-5">
         <div class="my_titles-sections">
+            <div class="rounded overflow-hidden mb-2 mx-auto">
+                <img class="" src="../assets/img/special-black-icon.png" alt="special photo">
+            </div>
             <h1>Special Packs</h1>
             <p>Select pricing plan to get more</p>
         </div>
@@ -59,6 +62,18 @@ export default {
 </script>
 <style lang="scss" scoped>
 section.my_container {
+    div.my_titles-sections {
+        div {
+            height: 65px;
+            width: 70px;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
     div.my_card {
         width: calc((100% / 3) - 2rem);
         margin: 1rem;
@@ -106,6 +121,11 @@ section.my_container {
 
             p {
                 font-size: 0.7rem;
+            }
+
+            img {
+                margin-top: 1rem;
+                width: 60px;
             }
 
         }
