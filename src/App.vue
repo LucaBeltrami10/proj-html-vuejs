@@ -1,7 +1,7 @@
 <template>
-  <AppHeader />
+  <AppHeader :headerNavEl="headerNavEl" />
   <AppMain />
-  <AppFooter />
+  <AppFooter :footerListEl="footerListEl" />
 </template>
 
 <script>
