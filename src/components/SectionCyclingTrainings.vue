@@ -30,9 +30,11 @@ export default {
         }
     },
     methods: {
-        showNextCard(cardToShow) {
+        /* showNextCard(cardToShow) {
+            numeromaggiore = this.cardToShow[this.cardToShow.length]
+            this
 
-        }
+        } */
 
     }
 
@@ -43,12 +45,12 @@ section.my_container {
 
 
     div.trainings-card {
-        width: calc((100% / 4) - 1rem);
-        margin: 0 0.5rem;
+        width: calc((100% / 4) - 2.6rem);
+        margin: 0 1.3rem;
         position: relative;
         overflow: hidden;
         background-color: white;
-        border: 4px solid black;
+        border: 5px solid black;
 
         p {
             position: absolute;
