@@ -5,7 +5,10 @@
                 <img id="gobike-logo" src="../assets/img/logo-gobike.png" alt="go bike logo">
             </div>
             <ul class="col-6 d-flex justify-content-center align-items-center mb-0">
-                <li v-for="opt in headerNavEl" class="me-4 fw-semibold"><a href="">{{ opt.element }}</a></li>
+                <li v-for="opt in headerNavEl" class="me-4 fw-semibold">
+                    <a href="">{{ opt.element }}</a>
+                    <div class="custom_border-bottom"></div>
+                </li>
             </ul>
             <div class="col-3 d-flex align-items-center">
                 <i class="fa-solid fa-bars me-2 fs-4"></i>
@@ -65,7 +68,22 @@ export default {
 <style lang="scss" scoped>
 ul {
     li {
+        margin-top: 0.1rem;
         font-size: 0.8rem;
+        padding: 0.5rem 0;
+
+        div.custom_border-bottom {
+            height: 3px;
+            width: 1%;
+            background-color: rgba($color: #000000, $alpha: 0);
+            margin-top: 0.1rem;
+        }
+
+        &:hover div.custom_border-bottom {
+            background-color: black;
+            width: 100%;
+            transition: width 0.5s;
+        }
     }
 }
 
