@@ -23,7 +23,6 @@ export default {
         SectionOurTrainers,
         SectionMembershipPlans,
         SectionRecentArticles,
-
     },
     data() {
         return {

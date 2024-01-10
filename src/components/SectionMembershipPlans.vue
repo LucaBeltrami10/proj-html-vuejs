@@ -6,14 +6,22 @@
         </div>
         <div class="d-flex">
             <div v-for="plan in subscriptionPlan" class="my_card">
+                <div class="my_hover-card justify-content-center align-items-center">
+                    <div class="text-center">
+                        <h1 class="text-uppercase fw-bold fs-6">{{ plan.plan }}</h1>
+                        <p class="fw-bold fs-5">${{ plan.price }}</p>
+                        <button type="button" class="btn btn-light mt-5">Send Request!</button>
+                    </div>
+                </div>
                 <div class="upper_card text-center mb-2">
                     <img class="img-da-cambiare" :src="`/src/assets/img/${plan.img}`" alt="">
                     <h1 class="fs-6 fw-bold">{{ plan.plan }}</h1>
                     <p>{{ plan.description }}</p>
                 </div>
                 <div class="bottom_card text-center m-0">
-                    <div v-for="service in plan.services"
-                        class="d-flex justify-content-center align-items-center border-bottom mt-1 mx-4">
+                    <div v-for="service, index in plan.services"
+                        class="d-flex justify-content-center align-items-center mt-1 mx-4"
+                        :class="index == (plan.services.length - 1) ? '' : 'border-bottom'">
                         <i :class="`fa-solid ${checkOrNot(service.included)} me-2 mb-1`"></i>
                         <p class=" pb-1  mb-1">
                             {{ service.service }}
@@ -54,7 +62,30 @@ section.my_container {
     div.my_card {
         width: calc((100% / 3) - 2rem);
         margin: 1rem;
+        position: relative;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        display: block;
+
+        div.my_hover-card {
+            height: 100%;
+            width: 100%;
+            background-color: black;
+            display: none;
+            position: absolute;
+            color: white;
+
+            button {
+                background-color: rgba($color: #000000, $alpha: 0);
+                color: white;
+                font-size: 0.8rem;
+                padding: 1rem 1.5rem;
+                border-radius: 3px;
+            }
+        }
+
+        &:hover div.my_hover-card {
+            display: flex;
+        }
 
         p {
             font-size: 0.8rem;
@@ -80,11 +111,11 @@ section.my_container {
             background-color: white;
             color: gray;
             padding-top: 2rem;
-            padding-bottom: 5rem;
+            padding-bottom: 3.2rem;
 
-            div {
+            /* div {
                 border-bottom: 1px solid lightgray;
-            }
+            } */
         }
     }
 
