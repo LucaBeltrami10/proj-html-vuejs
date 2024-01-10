@@ -1,19 +1,22 @@
 <template>
-    <div class="container-fluid pt-5">
+    <div class="container-fluid pt-4">
         <div class="row">
             <div class="my_left-col col-4 d-flex justify-content-end">
                 <div>
-                    <img src="../assets/img/logo-footer-gobike.png" alt="gobike logo's">
+                    <img class="mb-3" src="../assets/img/logo-footer-gobike.png" alt="gobike logo's">
                     <div class="d-flex">
+                        <i class="fa-solid fa-location-dot me-2"></i>
                         <p>New Jersey, USA</p>
                     </div>
                     <div class="d-flex">
+                        <i class="fa-solid fa-phone-volume me-2"></i>
                         <p>+1(234)567 89 10</p>
                     </div>
                     <div class="d-flex">
+                        <i class="fa-solid fa-envelope me-2"></i>
                         <p>example@example.com</p>
                     </div>
-                    <div class="d-flex">
+                    <div class="d-flex mt-1">
                         <button type="button" class="btn btn-dark">
                             <i class="fa-brands fa-facebook-f"></i>
                         </button>
@@ -29,7 +32,7 @@
             </div>
             <div class="my_center-col col-4 pe-5">
                 <h1 class="fw-bold fs-5">Join Our Newsletter</h1>
-                <p>Subscribe to receive usefoul information.</p>
+                <p class="mb-4">Subscribe to receive usefoul information.</p>
                 <div class="my_form">
                     <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Your Email Address">
                     <button type="button" class="btn btn-light mt-1">Subscribe</button>
@@ -92,7 +95,7 @@ div.container-fluid {
                 margin-right: 4rem;
 
                 img {
-                    width: 120px;
+                    width: 130px;
                 }
 
                 button {
