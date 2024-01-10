@@ -48,12 +48,16 @@
 
 <script>
 export default {
+    props: {
+        footerListEl: Array,
+    },
     data() {
         return {
 
         }
     },
     methods: {
+
 
     },
 }
