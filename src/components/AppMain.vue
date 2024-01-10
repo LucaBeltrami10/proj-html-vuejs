@@ -225,24 +225,28 @@ export default {
             newArticles: [
                 {
                     data: '22.06.2022',
+                    img: 'news-bike3-300x180.jpg',
                     subject: 'Bike',
                     title: 'Road bike or mountain bike?',
                     preview: 'Compared to simila road bikes with a solid frame structure, [...] ',
                 },
                 {
                     data: '22.06.2022',
+                    img: 'news-bike4-300x180.jpg',
                     subject: 'Bike',
                     title: 'What is mountain biking called?',
                     preview: 'Mountain biking is one of the most popular outdoor sport, [...] ',
                 },
                 {
                     data: '22.06.2022',
+                    img: 'news-bike5-300x180.jpg',
                     subject: 'Bike',
                     title: 'How much should you cycle a day?',
                     preview: 'In order to get the right benefit from the exercise [...] ',
                 },
                 {
                     data: '22.06.2022',
+                    img: 'news-bike6-300x180.jpg',
                     subject: 'Bike',
                     title: 'Road bike or mountain bike?',
                     preview: 'It take 5 km and 10 minutes, sir. But at [...] ',
