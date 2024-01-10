@@ -14,9 +14,16 @@
                         <p>example@example.com</p>
                     </div>
                     <div class="d-flex">
-                        <button type="button" class="btn btn-dark">D</button>
-                        <button type="button" class="btn btn-dark mx-1">D</button>
-                        <button type="button" class="btn btn-dark">D</button>
+                        <button type="button" class="btn btn-dark">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </button>
+                        <button type="button" class="btn btn-dark mx-1">
+                            <i class="fa-brands fa-square-instagram"></i>
+                        </button>
+                        <button type="button" class="btn btn-dark">
+                            <i class="fa-brands fa-twitter"></i>
+                        </button>
+
                     </div>
                 </div>
             </div>
