@@ -97,9 +97,12 @@ section.my_container {
 
         div.upper_card {
 
-            height: 200px;
+            height: 250px;
             color: white;
-            background-color: black;
+            background-image: url(../assets/img/trap2.png);
+            background-position: start;
+            background-repeat: no-repeat;
+            background-size: 125%;
 
             p {
                 font-size: 0.7rem;
@@ -110,12 +113,8 @@ section.my_container {
         div.bottom_card {
             background-color: white;
             color: gray;
-            padding-top: 2rem;
+            padding-top: 0;
             padding-bottom: 3.2rem;
-
-            /* div {
-                border-bottom: 1px solid lightgray;
-            } */
         }
     }
 

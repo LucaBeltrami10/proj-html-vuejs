@@ -2,7 +2,10 @@
     <section class="my_container mx-auto mb-5 overflow-hidden">
         <div class="row">
             <div class="my_left-col col-6 ms-auto px-3">
-                <img src="../assets/img/bike-player.png" alt="Bike player image">
+                <!-- <img class="my_img-rotate" src="../assets/img/bike-circle.png" alt="Bike player image"> -->
+                <div class="my_main-img">
+                    <img class="my_main-img" src="../assets/img/bike-player.png" alt="Bike player image">
+                </div>
 
             </div>
             <div class="my_right-col col-5 ps-5">
@@ -51,6 +54,22 @@ section.my_container {
             background-size: contain;
             background-repeat: no-repeat;
             background-position: center;
+            position: relative;
+
+
+
+            img.my_img-rotate {
+
+                position: absolute;
+            }
+
+            div.my_main-img {
+                z-index: 20;
+
+                img.my_main-img {
+                    z-index: 2;
+                }
+            }
 
 
             img {
