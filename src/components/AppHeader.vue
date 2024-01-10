@@ -21,7 +21,7 @@
             <div class="col-3 d-flex align-items-center">
                 <i class="fa-solid fa-bars me-2 fs-4"></i>
                 <button type="button" class="my_button btn btn-dark d-flex align-items-center ms-2">
-                    <i class="fa-solid fa-helmet-un fs-3 me-2"></i>
+                    <img src="../assets/img/helmet-black-icon.png" alt="">
                     <p class="m-0 fw-semibold">Upcoming Events</p>
                     <i class="fa-solid fa-arrow-right ms-1"></i>
                 </button>
@@ -126,11 +126,17 @@ ul {
 }
 
 button.my_button {
-    padding: 0.5rem 0.7rem 0.5rem 0.7rem;
+    padding: 0.4rem 0.7rem 0.4rem 0.7rem;
     border-radius: 3px;
+    background-color: black;
+
+    img {
+        width: 40px;
+        margin-right: 10px;
+    }
 
     p {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 
     i.fa-arrow-right {
