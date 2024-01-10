@@ -17,6 +17,39 @@ export default {
   },
   data() {
     return {
+      headerNavEl: [
+        {
+          element: 'Home',
+          options: false
+        },
+        {
+          element: 'About',
+          options: false
+        },
+        {
+          element: 'Trainings',
+          options: ['Riding Lesson', 'Safe Drive', 'Mountain Bike', 'Trail Drive', 'Pedaling', 'All Trainings'],
+        },
+        {
+          element: 'Packages',
+          options: false
+        },
+        {
+          element: 'Contact',
+          options: false
+        },
+      ],
+      footerListEl: [
+        {
+          listName: 'Trainigns',
+          options: ['Riding Lesson', 'Safe Drive', 'Mountain Bike', 'Trail Drive', 'Pedaling']
+        },
+        {
+          listName: 'Quick Links',
+          options: ['Home', 'About Us', 'Blog', 'Packages', 'Contact']
+        }
+
+      ]
 
     }
   },
