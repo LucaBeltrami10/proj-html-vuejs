@@ -8,6 +8,11 @@
                 <li v-for="opt in headerNavEl" class="me-4 fw-semibold">
                     <a href="">{{ opt.element }}</a>
                     <div class="custom_border-bottom"></div>
+                    <div class="my_dropdown" :class="opt.options != false ? 'my_dropdown-to-show' : ''">
+                        <ul class="p-0">
+                            {{ dropDown(opt.options) }}
+                        </ul>
+                    </div>
                 </li>
             </ul>
             <div class="col-3 d-flex align-items-center">
@@ -59,6 +64,19 @@ export default {
         }
     },
     methods: {
+        dropDown(ciao) {
+            if (ciao === false) {
+                return
+            } else {
+                let array = ciao;
+                let stringToPaste = '';
+                for (let i = 0; i < array.length; i++) {
+                    stringToPaste += `${array[i]} `
+                }
+                return stringToPaste
+            }
+
+        },
 
     },
 
@@ -71,6 +89,7 @@ ul {
         margin-top: 0.1rem;
         font-size: 0.8rem;
         padding: 0.5rem 0;
+        position: relative;
 
         div.custom_border-bottom {
             height: 3px;
@@ -79,10 +98,24 @@ ul {
             margin-top: 0.1rem;
         }
 
+        div.my_dropdown {
+            background-color: white;
+            width: 5.5rem;
+            padding: 1rem 0;
+            display: none;
+            position: absolute;
+            z-index: 2;
+        }
+
         &:hover div.custom_border-bottom {
             background-color: black;
             width: 100%;
             transition: width 0.5s;
+        }
+
+        &:hover div.my_dropdown-to-show {
+            display: block;
+            transition: display 1s;
         }
     }
 }
