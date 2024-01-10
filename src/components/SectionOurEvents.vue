@@ -56,5 +56,9 @@ div.my-card {
     i {
         font-size: 0.7rem;
     }
+
+    &:hover {
+        box-shadow: rgba(63, 63, 63, 0.2) 0px 8px 24px;
+    }
 }
 </style>
